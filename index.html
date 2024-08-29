@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
     <!-- ===== Main Containter Start ===== -->
@@ -15,7 +16,7 @@
         <!-- ===== Aside Start ===== -->
          <div class="aside">
             <div class="logo">
-                <a href="#"><span>A</span>tlas</a>
+                <a href="#"><span>M</span>enu</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
@@ -32,7 +33,7 @@
          <!-- ===== Main Content Start ===== -->
           <div class="main-content">
             <!-- ===== Home Section Start ===== -->
-             <section class="home section hidden">
+             <section class="home section">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -51,7 +52,7 @@
              </section>
             <!-- ===== Home Section End ===== -->
             <!-- ===== About Section Start ===== -->
-             <section class="about section hidden">
+             <section class="about section ">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -243,7 +244,7 @@
              </section>
              <!-- ===== About Section End ===== -->
              <!-- ===== Services Section Start ===== -->
-            <section class="service section hidden">
+            <section class="service section">
                 <div class="container">
                   <div class="row">
                       <div class="section-title padd-15">
@@ -369,7 +370,7 @@
             </section>
              <!-- ===== Services Section End ===== -->
              <!-- ===== Portfolio Section Start ===== -->
-            <section class="portfolio section ">
+            <section class="portfolio section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -424,13 +425,71 @@
               <!-- ===== Portfolio Section End ===== -->
               <!-- ===== Contact Section Start ===== -->
                <section class="contact section">
-                <div class="container"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Contact Info</h3>
+                    <h4 class="contact-sub-title padd-15">Where you can find me</h4>
+                    <div class="row">
+                        <!-- ===== Contact info item Start ===== -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa-brands fa-linkedin padd-15"></i></div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/jacob-sprouse-590a71255/">My LinkedIn</a>
+                        </div>
+                        <!-- ===== Contact info item End ===== -->
+                        <!-- ===== Contact info item Start ===== -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-map-marker-alt padd-15"></i></div>
+                            <h4>Location</h4>
+                            <p>Auburn, AL</p>
+                        </div>
+                        <!-- ===== Contact info item End ===== -->
+                        <!-- ===== Contact info item Start ===== -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-envelope padd-15"></i></div>
+                            <h4>Email</h4>
+                            <p>Jms0338@auburn.edu</p>
+                        </div>
+                        <!-- ===== Contact info item End ===== -->
+                         <!-- ===== Contact info item Start ===== -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa-brands fa-github padd-15"></i></div>
+                            <h4>Github</h4>
+                            <a href="https://github.com/Jsprouse0">My Github</a>
+                        </div>
+                        <!-- ===== Contact info item End ===== -->
+                    </div>
+                    <h3 class="contact-title padd-15">Checkout My Projects!</h3>
+                    <h4 class="contact-sub-title padd-15"></h4>
+                </div>
                </section>
               <!-- ===== Contact Section End ===== -->
           </div>
          <!-- ==== Main-content End ==== -->
      </div>
     <!-- ====Main Container End =====-->
+    <!-- ===== Style Switcher Start ===== -->
+    <!-- ===== Style Switcher End ===== -->
+     <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-nigh s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+     </div>
     <!-- ==== JS Files ==== -->
     <script src="js/script.js"></script>
 </body>
