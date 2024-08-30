@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GSoC Project</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- ===== Style Switcher ===== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
@@ -22,27 +27,27 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#" ><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#" ><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#" ><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#" ><i class="fa fa-comments"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about" ><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services" ><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#portfolio" ><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact" ><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
          </div>
          <!--===== Aside End ===== -->
          <!-- ===== Main Content Start ===== -->
           <div class="main-content">
             <!-- ===== Home Section Start ===== -->
-             <section class="home section">
+             <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Jacob Sprouse</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">Computer Science/Neuroscience Undergraduate</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing"></span></h3>
                             <p>I'm an undergraduate at Auburn University, working towards a dual bachelor's degree in Neuroscience and 
                                 Computer Science with a focus on AI engineering. My academic journey blends the complexities of the brain 
                                 with cutting-edge computational techniques, aiming to contribute to the evolving field of artificial intelligence.</p>
-                            <a href="#contact" class="btn hire-me">GSoC 2024 Project</a>
+                            <a href="" class="btn hire-me">GSoC 2024 Project</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/Me.jfif" alt="">
@@ -52,7 +57,7 @@
              </section>
             <!-- ===== Home Section End ===== -->
             <!-- ===== About Section Start ===== -->
-             <section class="about section ">
+             <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -223,13 +228,11 @@
                                                     </h3>
                                                     <h4 class="timeline-title">Google Summer of Code 2024 (INCF)</h4>
                                                     <p class="timeline-text">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+                                                        As a Google Summer of Code 2024 intern for the International Neuroinformatics Coordinating Facility (INCF), I enhanced model development using 
+                                                        NetPyNE’s “batch” subpackage. My work involves refactoring the code base for better scalability and user-friendliness. I also explored the 
+                                                        effectiveness of various search algorithms—including random, population-based, and posterior-based approaches—on a diverse repository of models, such as 
+                                                        rodent motor (M1), rodent somatosensory (S1), and macaque auditory (A1) thalamocortical circuits. My ultimate goal is to optimize 
+                                                        NetPyNE’s capabilities, making them more efficient and impactful for computational neuroscience research.
                                                     </p>
                                                  </div>
                                                  
@@ -244,11 +247,11 @@
              </section>
              <!-- ===== About Section End ===== -->
              <!-- ===== Services Section Start ===== -->
-            <section class="service section">
+            <section class="service section" id="services">
                 <div class="container">
                   <div class="row">
                       <div class="section-title padd-15">
-                          <h2>Services</h2>
+                          <h2>Career Future</h2>
                       </div>
                   </div>
                   <div class="row">
@@ -258,7 +261,7 @@
                               <div class="icon">
                                   <i class="fa fa-mobile-alt"></i>
                               </div>
-                              <h4>Mobile Apps</h4>
+                              <h4>Mobile App Developer</h4>
                               <p>
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -277,7 +280,7 @@
                               <div class="icon">
                                   <i class="fa fa-laptop-code"></i>
                               </div>
-                              <h4>Web Design</h4>
+                              <h4>Web Developer</h4>
                               <p>
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -294,9 +297,9 @@
                       <div class="service-item padd-15">
                           <div class="service-item-inner">
                               <div class="icon">
-                                  <i class="fa fa-palette"></i>
+                                  <i class="fa-solid fa-brain"></i>
                               </div>
-                              <h4>Web Design</h4>
+                              <h4>A.I. Engineer</h4>
                               <p>
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -315,7 +318,7 @@
                               <div class="icon">
                                   <i class="fa fa-code"></i>
                               </div>
-                              <h4>Web Design</h4>
+                              <h4>Software Developer</h4>
                               <p>
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -332,9 +335,9 @@
                       <div class="service-item padd-15">
                           <div class="service-item-inner">
                               <div class="icon">
-                                  <i class="fa fa-search"></i>
+                                  <i class="fa-brands fa-google"></i>
                               </div>
-                              <h4>Web Design</h4>
+                              <h4>Google</h4>
                               <p>
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -353,7 +356,7 @@
                               <div class="icon">
                                   <i class="fa fa-bullhorn"></i>
                               </div>
-                              <h4>Web Design</h4>
+                              <h4>Other Jobs</h4>
                               <p>
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                   Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -370,7 +373,7 @@
             </section>
              <!-- ===== Services Section End ===== -->
              <!-- ===== Portfolio Section Start ===== -->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -419,12 +422,21 @@
                             </div>
                         </div>
                         <!-- ===== portfolio item End ===== -->
+                        <!-- ===== portfolio item Start ===== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <a href=""><img src="" alt="VBSA"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===== portfolio item End ===== -->
                     </div>
                 </div>
             </section>
               <!-- ===== Portfolio Section End ===== -->
               <!-- ===== Contact Section Start ===== -->
-               <section class="contact section">
+               <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -478,8 +490,8 @@
         <div class="style-switcher-toggler s-icon">
             <i class="fas fa-cog fa-spin"></i>
         </div>
-        <div class="day-nigh s-icon">
-            <i class="fas fa-moon"></i>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
         </div>
         <h4>Theme Colors</h4>
         <div class="colors">
@@ -491,6 +503,10 @@
         </div>
      </div>
     <!-- ==== JS Files ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" 
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
