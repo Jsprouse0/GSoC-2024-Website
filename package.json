@@ -1,7 +1,8 @@
 {
   "name": "gsoc-2024-website",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
+  "homepage": "https://jsprouse0.github.io/GSoC-2024-Website",
   "type": "module",
   "scripts": {
     "dev": "vite",
